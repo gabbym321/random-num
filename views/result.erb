@@ -15,25 +15,29 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- custom JS -->
     <script src="js/script.js"></script>
+    <style> .container-fluid {
+    background-color: lightblue;
+}
+h1 {
+
+    text-align: center;
+    color: #;
+}
+    </style>
   </head>
   <body>
     
     <div class="container-fluid">
-      <!--<h1>Enter your favorite number, your birthdate and birth year</h1>-->
-      <!--<form action='/result' method='post'>-->
-      <!--  <input type="text" name="fav_num">-->
-      <!--  <input type="text" name="date">-->
-      <!--  <input type="text" name="year">-->
-      <!--  <input type="submit" value ="Press to get results">-->
+  
         
-      <!--</form>-->
-      
-      1) <%= @num %> <br>
+    
+      <h1> Here are some facts relating to information you submitted! </h1> 
+      <h3>1) <%= @num %> </h3> <br> 
       <br>
      
-     2) <%= @date %> <br>
+     <h3>2) <%= @date %> </h3> <br>
      <br>
-     3) <%= @year %> <br>
+     <h3>3) <%= @year %> </h3> <br> 
      <br> 
       
       

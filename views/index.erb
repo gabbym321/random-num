@@ -15,15 +15,38 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- custom JS -->
     <script src="js/script.js"></script>
+    
+    
+    <style> /* All of this is the css that edits only the first view page. pretty self explanatory. */ .container-fluid{
+    background-color: pink; 
+}
+
+h1 {
+    color: #445A16; 
+    text-align: center;
+}
+input:hover {
+    background-color: #E3E07F;
+   
+}
+p {
+  color: #445A16;
+}
+
+</style>
+
   </head>
   <body>
     
     <div class="container-fluid">
-      <h1>Enter your favorite number, your birthdate and birth year</h1>
-      <form action='/result' method='post'> <br>
-        Favorite Number: <input type="text" name="fav_num"> <br>
-        Birth Date: <input type="text" name="date"> <br>
-        Birth Year: <input type="text" name="year"> <br>
+      <h1>Enter your favorite number, your birthdate and birth year</h1> 
+      <form action='/result' method='post'> <!-- The action says where to send this data and get info the method post tells the computer how we want it to send form data-->  <br>
+        <!--This is a text form. the type text allows users to type things inside and the name is the key for the params in the applacation control.  -->
+        <p>Favorite Number: </p> <input type="text" name="fav_num"> <br>
+        <p> Birth Date: </p> <input type="text" name="date"> <br>
+       <p> Birth Year: </p> <input type="text" name="year"> <br>
+       <br>
+       <!-- This is a submit button which is why the type is different. the value is what is written on the button -->
         <input type="submit" value ="Press to get results">
         
       </form>
