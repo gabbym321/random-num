@@ -17,7 +17,7 @@ class ApplicationController < Sinatra::Base
     @date= get_date(date)
     year= params[:year]
    @year=  get_year(year)
-   erb :result 
+   erb :result  
   end 
 
 end
